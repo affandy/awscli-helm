@@ -6,7 +6,7 @@ MAINTAINER Yanuar Affandy
 # docker build --no-cache --build-arg HELM_VERSION=2.12.0 -t alpine/helm:2.12.0 .
 ARG HELM_VERSION
 
-ENV BASE_URL="https://storage.googleapis.com/kubernetes-helm"
+ENV BASE_URL="https://get.helm.sh"
 ENV TAR_FILE="helm-v${HELM_VERSION}-linux-amd64.tar.gz"
 
 RUN sudo apt-get update && \
